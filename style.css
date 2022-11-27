@@ -1,0 +1,318 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    /* box-sizing: border-box; */
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    
+}
+.logo img{
+    width: 70px;
+    height: 60px;
+
+}
+.list{
+    display: flex;
+
+}
+.list li{
+    list-style: none;
+    padding: 2px;
+    margin: 2px 4px;
+    
+}
+.list li:hover{
+    background-color: black;
+    border-radius: 12px;
+    box-shadow: white 2px 2px 4px;
+}
+.list li a{
+    text-decoration: none;
+    color: white;
+    margin: 4px;
+    padding: 2px;
+    font-family: 'Permanent Marker', cursive;
+    
+}
+#home{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+    height: 351px;
+}
+#home::before{
+    content: "";
+    background: url('img/omg\ \(1\).jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    top: 0px;
+    left: 0px;
+
+}
+.h-primary{
+    margin-top: 72px;
+    padding: 2px;
+    font-size: 35px;
+    margin-bottom: 20px;
+    font-weight: bolder;
+    text-shadow: white 1px 1px;
+    color: rgb(129, 0, 0);
+    
+}
+.intro{
+    margin-bottom: 20px;
+    font-family:  cursive;
+    text-shadow: white 0px 0px 4px;
+    font-weight: bold;
+    font-style: oblique;
+}
+.btn{
+    cursor: pointer;
+    padding: 2px;
+    margin: 12px;
+    border-radius: 4px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    background-color: rgb(250, 128, 128);
+    box-shadow: black 2px 2px;
+}
+.btn:hover{
+    box-shadow: rgb(3, 0, 0) 4px 4px 2px;
+    animation: forwards;
+    background-color: rgb(252, 170, 170);
+    font-size: 15px;
+    font-weight: bolder;
+    
+}
+#services{
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    align-items: center;
+    margin-top: 45px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /* animation-name: harsh;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 2;
+    -o-animation-timing-function: ease-in-out; */
+    
+}
+/* #services:hover{
+    margin-top: -115px;
+    background: url('img/fo\ \(2\).jpg') no-repeat center center/cover;
+
+} */
+/* @keyframes harsh{
+    from{
+        margin-top: 14px;
+    }
+    to{
+        margin-top: -127px;
+    }
+} */
+#services::before{
+    content: "";
+    background: url('img/fo\ \(2\).jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    /* opacity: 0.9; */
+}
+.h-secondary{
+    margin-top: 12px;
+    padding: 2px;
+    font-size: 35px;
+    margin-bottom: 20px;
+    font-weight: bolder;
+    text-shadow: white 1px 1px;
+    color: rgb(129, 0, 0);
+}
+#group{
+    display: flex;
+}
+.box{
+    border: 2px solid black;
+    margin: 12px;
+    border-radius: 12px;
+    background-color: rgb(224, 224, 224);
+    height: 200px;
+    padding: 12px 20px;
+}
+.order{
+    padding: 12px;
+    color: brown;
+    font-family: fantasy;
+}
+.box:hover{
+    background-color: rgb(245, 245, 188);
+    margin: 5px;
+}
+.but1{
+    display: flex;
+    position: absolute;
+    top: 25px;
+    right: 2px;
+    font-family: 'Aclonica', sans-serif;
+    
+
+}
+.bu1{
+    margin: 2px;
+    padding: 4px;
+    border-radius: 10px;
+    background-color: rgb(181, 245, 253);
+    font-family: 'Aclonica', sans-serif;
+}
+.bu2{
+    margin: 2px;
+    padding: 4px;
+    border-radius: 10px;
+    background-color: rgb(181, 245, 253);
+    font-family: 'Aclonica', sans-serif;
+    
+
+}
+.bu1:hover{
+    background-color: rgb(59, 225, 247);
+    font-weight: bold;
+    animation: forwards;
+    box-shadow: black 2px 2px;
+    padding: 6px;
+}
+.bu2:hover{
+    background-color: rgb(59, 225, 247);
+    font-weight: bold;
+    animation: forwards;
+    box-shadow: black 2px 2px;
+    padding: 6px;
+}
+.center{
+    background-color: black;
+    position: absolute;
+    bottom: -576px;
+    width: 100%;
+    text-align: center;
+    max-height: max-content;
+    color: rgb(255, 255, 255);
+}
+
+.inp{
+    display: flex;
+    flex-flow: column;
+    height: 400px;
+    padding-top: 44px;
+    
+    width: 100%;
+
+}
+.info{
+    font-family: 'Aclonica', sans-serif;;
+    height: 182px;
+    display: flex;
+    flex-flow: column;
+    position: relative;
+    bottom: -345px;
+    padding: 4px 4px;
+    /* padding-bottom: 100px; */
+    margin: 4px auto;
+    /* align-content: center;
+    text-align: center */
+    ;
+}
+.info::before{
+    content: "";
+    background: url('img/fo\ \(1\).jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 150%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+.sett{
+    padding-top: 12px;
+    display: flex;
+    flex-flow: column;
+    /* justify-content: center; */
+    width: 30%;
+    /* padding-left: 350px; */
+    margin: 25px auto;
+    /* position: relative;
+    width: auto; */
+    text-align: center;
+    justify-content: center;
+}
+.sett input{
+    text-align: center;
+    justify-content: center;
+    border-radius: 12px;
+    background-color: cornsilk;
+    
+    padding: 2px;
+    margin: 2px;
+    
+}
+.sett input:hover{
+    padding: 4px;
+    background-color: rgb(171, 253, 253);
+    box-shadow: crimson 2px 2px 2px; 
+    
+
+}
+.ico{
+    display: flex;
+    position: absolute;
+    bottom: -560px;
+    margin: 4px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.ic{
+    margin: 4px;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 4px;
+}
+.ic img{
+    width: 80px;
+    height: 70px;
+  
+
+}
+.ico::before{
+    content: "";
+    /* background-color: blanchedalmond; */
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+#time{
+    position: absolute;
+    top: 64px;
+    right: 0px;
+}
